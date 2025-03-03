@@ -34,7 +34,24 @@ class MainActivity : AppCompatActivity() {
 //                //TODO("Not yet implemented")
             }
         }
+        val Region =arrayOf("Select Region ","Odisha","Mumbai","Delhi","Kolkata");
+        val spinner2 = findViewById<Spinner>(R.id.sipnner_2);
+        val adapter2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, Region);
+        spinner2.adapter=adapter2
+        spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                Toast.makeText(
+                    this@MainActivity,
+                    "You selected ${Region[position]}",
+                    Toast.LENGTH_SHORT
+                ).show()
 
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
 
     }
 }
