@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<View>(R.id.submit_btn)
         button.setOnClickListener {
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, "You are searching for "+at_search.text, Toast.LENGTH_SHORT).show()
         }
 
 
