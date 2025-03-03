@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewParent
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -52,6 +53,15 @@ class MainActivity : AppCompatActivity() {
                 TODO("Not yet implemented")
             }
         }
+        val at_search = findViewById<AutoCompleteTextView>(R.id.auto_complet)
+        val adapter3 = ArrayAdapter(this, android.R.layout.simple_list_item_1, contries)
+        at_search.setAdapter(adapter3)
+
+        val button = findViewById<View>(R.id.submit_btn)
+        button.setOnClickListener {
+            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 }

@@ -51,4 +51,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view"
         app:layout_constraintVertical_bias="0.101" />
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_complet"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="52dp"
+        android:text="AutoCompleteTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sipnner_2" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="171dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_complet" />
 </androidx.constraintlayout.widget.ConstraintLayout>
